@@ -36,9 +36,14 @@
     <link rel="stylesheet" type="text/css" href="css/ie.css" />
     <![endif]-->
     
-    <!--[if gt IE 9]>
-    <link rel="stylesheet" type="text/css" href="css/ie.css" />
-    <![endif]-->
+    <style type="text/css">
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS here */
+		header .topbar .topmenu li a{
+			padding:20px 39px;
+		}
+	}
+    </style>
 </head>
 <body>
 <div id="outer">
