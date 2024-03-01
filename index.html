@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Airlines Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/jQueryTab.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/animation.css" type="text/css" media="screen" />
+    
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+    
+    <!--datepicker css -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="all" />
+    
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=MontserratBlack" rel="stylesheet" />
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <script type="text/javascript" src="js/respond.js"></script>
+    <![endif]-->
+    
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+    
+    <style type="text/css">
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS here */
+		header .topbar .topmenu li a{
+			padding:20px 39px;
+		}
+	}
+    </style>
+</head>
+<body>
+<div id="outer">
+  <header>
+    <div class="blueband"></div>
+    <div class="main">
+      <div class="topbar"> <a href="#" class="logo"></a>
+        <ul class="topmenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Low Fare Calendar</a></li>
+          <li><a href="#">flight status</a></li>
+          <li><a href="#">My Travels</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Low Fare Calendar</a></li>
+          <li><a href="#">flight status</a></li>
+          <li><a href="#">My Travels</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="banner">
+      <div class="banner-main">
+        <div class="tabs-7">
+          <ul class="tabs">
+            <li><a href="#tab25">Flight</a></li>
+            <li><a href="#tab26">Flight + Hotel</a></li>
+            <li><a href="#tab27">Flight + Car</a></li>
+            <li><a href="#tab28">Hotels</a></li>
+            <li><a href="#tab29">Cars</a></li>
+          </ul>
+          <section class="tab_content_wrapper">
+            <article class="tab_content" id="tab25">
+              <form>
+                <input type="text" id="txtOrigin1" placeholder="Origin"/>
+                <input type="text" id="txtDestination1" placeholder="Destination"/>
+                <input type="text" id="txtDeparture1" placeholder="Departure"/>
+                <input type="text" id="txtReturn1" placeholder="Return"/>
+                <input type="text" id="txtGuests1" placeholder="Guests"/>
+                <input type="button" id="btnSearch1" value="Search" />
+              </form>
+            </article>
+            <article class="tab_content" id="tab26">
+              <form>
+                <input type="text" id="txtOrigin2" placeholder="Origin"/>
+                <input type="text" id="txtDestination2" placeholder="Destination"/>
+                <input type="text" id="txtDeparture2" placeholder="Departure"/>
+                <input type="text" id="txtReturn2" placeholder="Return"/>
+                <input type="text" id="txtGuests2" placeholder="Guests"/>
+                <input type="button" id="btnSearch2" value="Search" />
+              </form>
+            </article>
+            <article class="tab_content" id="tab27">
+              <form>
+                <input type="text" id="txtOrigin3" placeholder="Origin"/>
+                <input type="text" id="txtDestination3" placeholder="Destination"/>
+                <input type="text" id="txtDeparture3" placeholder="Departure"/>
+                <input type="text" id="txtReturn3" placeholder="Return"/>
+                <input type="text" id="txtGuests3" placeholder="Guests"/>
+                <input type="button" id="btnSearch3" value="Search" />
+              </form>
+            </article>
+            <article class="tab_content" id="tab28">
+              <form>
+                <input type="text" id="txtOrigin4" placeholder="Origin"/>
+                <input type="text" id="txtDestination4" placeholder="Destination"/>
+                <input type="text" id="txtDeparture4" placeholder="Departure"/>
+                <input type="text" id="txtReturn4" placeholder="Return"/>
+                <input type="text" id="txtGuests4" placeholder="Guests"/>
+                <input type="button" id="btnSearch4" value="Search" />
+              </form>
+            </article>
+            <article class="tab_content" id="tab29">
+              <form>
+                <input type="text" id="txtOrigin5" placeholder="Origin"/>
+                <input type="text" id="txtDestination5" placeholder="Destination"/>
+                <input type="text" id="txtDeparture5" placeholder="Departure"/>
+                <input type="text" id="txtReturn5" placeholder="Return"/>
+                <input type="text" id="txtGuests5" placeholder="Guests"/>
+                <input type="button" id="btnSearch5" value="Search" />
+              </form>
+            </article>
+          </section>
+        </div>
+        <!--div id="banner_form">
+            <ul>
+                <li><a href="#" class="active">Flight</a></li>
+                <li><a href="#">Flight + Hotel</a></li>
+                <li><a href="#">Flight + Car</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Cars</a></li>
+            </ul>
+            <form>
+                <input type="text" id="txtOrigin" placeholder="Origin"/>
+                <input type="text" id="txtDestination" placeholder="Destination"/>
+                <input type="text" id="txtDeparture" placeholder="Departure"/>
+                <input type="text" id="txtReturn" placeholder="Return"/>
+                <input type="text" id="txtGuests" placeholder="Guests"/>
+                <input type="button" id="btnSearch" value="Search" />
+            </form>
+        </div>-->
+        <div id="banner_heading">Recharge and reconnect with yourself!</div>
+        <div id="banner_description">Discover the rich heritage, stunning architecture and vibrant culture of fabulous Vienna!</div>
+        <div id="banner_terms">Restrictions apply, for further information read the Terms and Conditions</div>
+        <input type="button" id="btnBook" value="Book now" />
+      </div>
+    </div>
+    <div id="obar">
+      <div class="main"> <span class="fleft">Latest updates on travel regulations</span> <span class="fright">Read More</span> </div>
+    </div>
+    <div id="travel-opportunity">
+      <div class="main">
+        <h5>Explore your travel opportunities with us!</h5>
+        <div class="full_row">
+          <div class="travel-block">
+            <div class="col-1"> <img src="images/ico-fare_finder.png" width="40" height="27" alt="" /> </div>
+            <div class="col-2">
+              <h6>Fare Finder</h6>
+              <p>Flexible with dates ? Search for the lowest available fare for your journey, and book by best price.</p>
+            </div>
+          </div>
+          <div class="travel-block">
+            <div class="col-1"> <img src="images/ico-download-app.png" width="26" height="45" alt="" /> </div>
+            <div class="col-2">
+              <h6>Download our app</h6>
+              <p>Booking a cheap Wizz Air flight ticket has never been so easy as with our FREE mobile application.</p>
+            </div>
+          </div>
+          <div class="travel-block">
+            <div class="col-1"> <img src="images/ico-good_deal.png" width="39" height="44" alt="" /> </div>
+            <div class="col-2">
+              <h6>Never miss a good deal</h6>
+              <p>Subscribe to our newsletter and be the first to know about new routes and special offers.</p>
+            </div>
+          </div>
+          <div class="travel-block">
+            <div class="col-1"> <img src="images/ico-careers.png" width="36" height="45" alt="" /> </div>
+            <div class="col-2">
+              <h6>Careers with us</h6>
+              <p>Join a full world of opportunities!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="no_lo-padding">
+    <div class="main">
+      <div class="full_row">
+        <div class="highlight-block"> <img src="images/highlight-img1.png" width="566" height="318" alt="" />
+          <div class="inner_40">
+            <h6>Iberia’s Flash Offers</h6>
+            <p>With over 1104 miles of emerald coastline and 1244 magical islands to choose from, Croatia should be top of every bucket list.</p>
+          </div>
+        </div>
+        <div class="highlight-block"> <img src="images/highlight-img2.png" width="566" height="318" alt="" />
+          <div class="inner_40">
+            <h6>wine club special Offers</h6>
+            <p>Whether you’re looking to explore Dubrovnik’s famous city walls, gaze at Zadar’s outdoor art and magnificent sunsets..</p>
+          </div>
+        </div>
+        <div class="highlight-block"> <img src="images/highlight-img3.png" width="566" height="318" alt="" />
+          <div class="inner_40">
+            <h6>Flight + Hotel</h6>
+            <p>Combine flight + hotel to get the best price and get additional Avios for booking the package. Sign up here to receive personalized offers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="main"> 
+    	<h5>Personalise your travel experience</h5>
+      <!--  Demos -->
+      <div id="demos" class="full_row">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="images/carousel-ico1.png" width="58" height="100" alt=""/>
+                <h6>Add checked baggage</h6>
+                <p>Add baggage to your booking from 19.99 EUR and pack for your trip worry-free.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico2.png" width="58" height="100" alt=""/>
+                <h6>Choose your seat</h6>
+                <p>Love a good sky view or want more space? Pick your favourite seat and get comfy on board.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico3.png" width="58" height="100" alt=""/>
+                <h6>Protect your trip</h6>
+                <p>Enjoy a worry-free journey with travel insurance that includes trip cancellation, baggage and medical insurance benefits.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico4.png" width="58" height="100" alt=""/>
+                <h6>Dine in the sky</h6>
+                <p>Pre-order your meal cooked from the finest ingredients shortly before your flight.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico5.png" width="58" height="100" alt=""/>
+                <h6>Go heavy on board</h6>
+                <p>No more queuing at the bag carousel - upgrade your hand baggage from 8kg to 12kg.</p>
+              </div>
+               <div class="item">
+                <img src="images/carousel-ico1.png" width="58" height="100" alt=""/>
+                <h6>Add checked baggage</h6>
+                <p>Add baggage to your booking from 19.99 EUR and pack for your trip worry-free.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico2.png" width="58" height="100" alt=""/>
+                <h6>Choose your seat</h6>
+                <p>Love a good sky view or want more space? Pick your favourite seat and get comfy on board.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico3.png" width="58" height="100" alt=""/>
+                <h6>Protect your trip</h6>
+                <p>Enjoy a worry-free journey with travel insurance that includes trip cancellation, baggage and medical insurance benefits.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico4.png" width="58" height="100" alt=""/>
+                <h6>Dine in the sky</h6>
+                <p>Pre-order your meal cooked from the finest ingredients shortly before your flight.</p>
+              </div>
+              <div class="item">
+                <img src="images/carousel-ico5.png" width="58" height="100" alt=""/>
+                <h6>Go heavy on board</h6>
+                <p>No more queuing at the bag carousel - upgrade your hand baggage from 8kg to 12kg.</p>
+              </div>
+            </div>
+      </div>
+      
+      <!--<div class="full_row">
+        <div class="carousel-block"> <img src="images/carousel-ico1.png" width="58" height="100" alt=""/>
+          <h6>Add checked baggage</h6>
+          <p>Add baggage to your booking from 19.99 EUR and pack for your trip worry-free.</p>
+        </div>
+        <div class="carousel-block"> <img src="images/carousel-ico2.png" width="58" height="100" alt=""/>
+          <h6>Choose your seat</h6>
+          <p>Love a good sky view or want more space? Pick your favourite seat and get comfy on board.</p>
+        </div>
+        <div class="carousel-block"> <img src="images/carousel-ico3.png" width="58" height="100" alt=""/>
+          <h6>Protect your trip</h6>
+          <p>Enjoy a worry-free journey with travel insurance that includes trip cancellation, baggage and medical insurance benefits.</p>
+        </div>
+        <div class="carousel-block"> <img src="images/carousel-ico4.png" width="58" height="100" alt=""/>
+          <h6>Dine in the sky</h6>
+          <p>Pre-order your meal cooked from the finest ingredients shortly before your flight.</p>
+        </div>
+        <div class="carousel-block"> <img src="images/carousel-ico5.png" width="58" height="100" alt=""/>
+          <h6>Go heavy on board</h6>
+          <p>No more queuing at the bag carousel - upgrade your hand baggage from 8kg to 12kg.</p>
+        </div>
+      </div>-->
+    </div>
+  </section>
+  <section class="grey_bg">
+    <div class="main">
+      <div class="full_row">
+        <h5>Why book on vueling.com</h5>
+        <p>Vueling takes you to over 100 destinations, including major cities in Spain, Europe, North Africa and the Middle East. Book your next getaway easily on our website or app and find cheap flights. With over 1104 miles of emerald coastline and 1244 magical islands to choose from, Croatia should be top of every bucket list.</p>
+        <p>Whether you’re looking to explore Dubrovnik’s famous city walls, gaze at Zadar’s outdoor art and magnificent sunsets, discover Split’s ancient Roman palace, or enjoy the bustling seaside towns and beautiful countryside of the Istrian Riviera, easyJet can take you there for less.</p>
+        <p>Grab your passport – it’s time to book your flight to Croatia!</p>
+        <ul>
+          <li> <span class="heading">No admin charges</span> <span class="desc">At Vueling we don't charge you simply for making a booking, or for the payment method you use. No surprises!</span> </li>
+          <li> <span class="heading">Free online check-in</span> <span class="desc">From 7 days before your flight with the Basic fare and as soon as you book with any other fare.</span> </li>
+          <li> <span class="heading">You collect Avios</span> <span class="desc">Sign up to Vueling Club for free and collect Avios with every booking you make.</span> </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="no_lo-padding">
+    <div class="main">
+      <ul class="service-block">
+        <li> <span class="col-1"><img src="images/helpdesk-ico.png" width="38" height="32" alt="" /></span> <span class="col-2"> <span class="heading">Helpdesk</span> <span class="desc">We can help clear up any question you may have about your trip: baggage, documentation, airports and more.</span> </span> </li>
+        <li> <span class="col-1"><img src="images/mobile_ico.png" width="38" height="32" alt="" /></span> <span class="col-2"> <span class="heading">Iberia on your mobile</span> <span class="desc">Buy your Iberia flight, check-in, manage your reservation or check the status of your flight, all in the same application.</span> </span> </li>
+        <li> <span class="col-1"><img src="images/join_ico.png" width="38" height="32" alt="" /></span> <span class="col-2"> <span class="heading">Join Iberia Plus</span> <span class="desc">Register to live a unique flying experience, get exclusive discounts and collect Avios.</span> </span> </li>
+        <li> <span class="col-1"><img src="images/support_ico.png" width="38" height="32" alt="" /></span> <span class="col-2"> <span class="heading">Support</span> <span class="desc">Have any questions? Contact our <a href="#">Customer Services Centre.</a></span> </span> </li>
+      </ul>
+    </div>
+  </section>
+  <section class="no_lo-padding section_55">
+    <div class="main">
+      <h5>Final Prices: Taxes, Service Fees and Carrier Charges included</h5>
+      <p>The prices shown are for flights from Spain that customers have recently searched. These prices may change according to seat availability, possible variations in fares, taxes and other supplements when you perform your search. Prices per journey are applicable for return-flight tickets. Best guaranteed price at Iberia.com.</p>
+    </div>
+  </section>
+  <section class="no_lo-padding section_55">
+    <div class="main">
+      <h5>Holiday Packages</h5>
+      <p>All holiday prices, if shown, are per person in Euros based on two adults sharing the lowest room category and include return economy flights on an Iberia or Iberia codeshare operated flights from Madrid. Prices includes all pre-payable taxes and charges, correct as at today but may vary and places are extremely limited so please check iberia.com for latest prices and availability. Some payment methods attract a handling fee. All ground services are supplied by British Airways Holidays. Standard Iberia terms and conditions apply. All travel is subject to availability.</p>
+    </div>
+  </section>
+  <section class="no_lo-padding">
+    <div class="main">
+      <h5>Find your ideal destination</h5>
+      <div class="full_row">
+        <div class="destination_block">
+          <div class="inner_padding"> <img src="images/destn_img1.png" width="380" height="380" alt="" />
+            <div class="caption">Sun and Sand</div>
+            <input type="button" id="btnExplore" value="Explore" />
+          </div>
+        </div>
+        <div class="destination_block">
+          <div class="inner_padding"> <img src="images/destn_img2.png" width="380" height="380" alt="" />
+            <div class="caption">Natural and rural</div>
+            <input type="button" id="btnExplore" value="Explore" />
+          </div>
+        </div>
+        <div class="destination_block">
+          <div class="inner_padding"> <img src="images/destn_img3.png" width="380" height="380" alt="" />
+            <div class="caption">Urban and Cultural</div>
+            <input type="button" id="btnExplore" value="Explore" />
+          </div>
+        </div>
+        <div class="destination_block">
+          <div class="inner_padding"> <img src="images/destn_img4.png" width="380" height="380" alt="" />
+            <div class="caption">Family</div>
+            <input type="button" id="btnExplore" value="Explore" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="main">
+      <div class="signup_subscribe">
+        <h6>Sign Up</h6>
+        <p> <span class="grey-font bold-font">Are you new around here?</span><br/>
+          <span class="grey-font bold-font">Join our club now</span> and get the most out of your trips.<br/>
+          <span class="grey-font bold-font">Collect Avios</span> with us and our partners. Use them to get discounts and even to fly for free! </p>
+        <p>Do you have an account already? <a href="#">Log in</a></p>
+        <input type="button" id="btnSignUp" value="Sign up now"/>
+      </div>
+      <div class="signup_subscribe"></div>
+      <div class="signup_subscribe">
+        <h6>Subscribe to our Newsletter</h6>
+        <p>Subscribe to the TAP newsletter and receive all special offers, promotions and news in your inbox. Always be aware of the best opportunities.</p>
+        <form>
+          <input type="text" id="txtSubscribe" placeholder="Enter your Email"/>
+          <input type="button" id="btnSubscribe" value="Subscribe"/>
+        </form>
+        <p>By signing up, you confirm that you have got acquainted with airBaltic's <a href="#">Privacy Policy.</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="main">
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">About airBaltic</li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Work with us</a></li>
+          <li><a href="#">Advertise with us</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Legal disclaimer</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">Useful Links</li>
+          <li><a href="#">Refunds</a></li>
+          <li><a href="#">Online check-in</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Manage booking</a></li>
+          <li><a href="#">Flight information</a></li>
+          <li><a href="#">Quick search</a></li>
+          <li><a href="#">Online services</a></li>
+          <li><a href="#">Delays and cancellations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">Other Important Features</li>
+          <li><a href="#">Transport conditions</a></li>
+          <li><a href="#">Terms and conditions TAP Client</a></li>
+          <li><a href="#">Legal information</a></li>
+          <li><a href="#">Important notice on customer information</a></li>
+          <li><a href="#">About accessibility</a></li>
+          <li><a href="#">TAP Miles terms and conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">The EU Air Safety List</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">Promotions</li>
+          <li><a href="#">Flights Lisbon</a></li>
+          <li><a href="#">Flights Porto</a></li>
+          <li><a href="#">Flights Paris</a></li>
+          <li><a href="#">Flights London</a></li>
+          <li><a href="#">Flights Luanda</a></li>
+          <li><a href="#">Flights Brazil</a></li>
+          <li><a href="#">Lisbon - New York</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">Other Services</li>
+          <li><a href="#">Group tickets</a></li>
+          <li><a href="#">Corporate tickets</a></li>
+          <li><a href="#">Become corporate client</a></li>
+          <li><a href="#">Charter flights</a></li>
+          <li><a href="#">Cargo services</a></li>
+          <li><a href="#">Gift card</a></li>
+          <li><a href="#">airBaltic souveniers</a></li>
+          <li><a href="#">airBaltic NDC</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li class="footer-head">Partner Services</li>
+          <li><a href="#">airBaltic Holidays</a></li>
+          <li><a href="#">Booking.com</a></li>
+          <li><a href="#">SIXT</a></li>
+          <li><a href="#">Rentalcars.com</a></li>
+          <li><a href="#">Lounge Pass</a></li>
+          <li><a href="#">ParkVia</a></li>
+          <li><a href="#">GetYourGuide</a></li>
+          <li><a href="#">E-visa with Sherpa</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright_bar">
+    <div class="main">
+      <div class="full_row"><a href="#">Copyright Vueling Airlines SA</a> | <a href="#">Supplementary Service Rates</a> | <a href="#">Website Terms Of Use</a> | <a href="#">Cookie Policy</a> | <a href="#">Privacy Policy</a> | <a href="#">Accessibility</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a></div>
+      <div class="full_row">Card issued by hybrid entity CaixaBank Payments &amp; Consumer, E.F.C. E.P., S.A.U., with Tax ID Number A-08980153 and registered with the Bank of Spain's official register of institutions with code 8776. CaixaBank, S.A. is the card issuer. The system chosen by CaixaBank Payments &amp; Consumer to protect the funds of customers using the payment services is the deposit in a separate account opened with CaixaBank, S.A. The granting of credit cards is subject to the analysis of solvency and of the applicant's ability to pay back the credit, according to the risk policies of CaixaBank Payments &amp; Consumer, E.F.C. E.P., S.A.U.</div>
+    </div>
+  </div>
+</div>
+    <!-- jQueryTab.js --> 
+    <script type="text/javascript" src="js/jQueryTab.js"></script> 
+    <script type="text/javascript">
+        // initializing jQueryTab plugin 
+        $('.tabs-7').jQueryTab({
+            initialTab: 2,
+            tabInTransition: 'fadeIn',
+            tabOutTransition: 'fadeOut',
+            cookieName: 'active-tab-7'
+            
+        });
+    </script> 
+    
+    
+    <!-- jQuery Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+		  $('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			responsiveClass: true,
+			responsive: {
+			  0: {
+				items: 1,
+				nav: true
+			  },
+			  600: {
+				items: 3,
+				nav: false
+			  },
+			  1000: {
+				items: 5,
+				nav: true,
+				loop: false,
+				margin: 20
+			  }
+			}
+		  })
+		});
+  </script>
+  
+  <!-- jquery Date Picker -->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	  <script type="text/javascript">
+          $( function() {
+            $( "#txtDeparture1" ).datepicker();
+            $( "#txtReturn1" ).datepicker();
+            
+            $( "#txtDeparture2" ).datepicker();
+            $( "#txtReturn2" ).datepicker();
+            
+            $( "#txtDeparture3" ).datepicker();
+            $( "#txtReturn3" ).datepicker();
+            
+            $( "#txtDeparture4" ).datepicker();
+            $( "#txtReturn4" ).datepicker();
+            
+            $( "#txtDeparture5" ).datepicker();
+            $( "#txtReturn5" ).datepicker();
+          } );
+      </script>
+      
+    <!-- slicknav -->
+    <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
+    </script>
+</body>
+</html>
