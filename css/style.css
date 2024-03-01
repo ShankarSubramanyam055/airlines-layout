@@ -29,6 +29,9 @@ audio:not([controls]) {
 *{
 	margin:0;
 	padding:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
 
 body{
@@ -80,21 +83,43 @@ header .blueband{
 
 header .topbar{
 	padding:1.5% 40px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	align-items:center;
 	overflow:hidden;
 }
 
 header .topbar a.logo{
-	width:259px;
-	height:40px;
-	background:url(../images/logo.png) no-repeat;
+	width:14.7%;
+	max-width:240px;
+	display:block;
+	position:relative;
+	float:left;
+}
+
+header .topbar a.logo img{
+	width:100%;
+	height:auto;
+	max-width:239px;
+	max-height:40px;
+	/*background:url(../images/logo.png) no-repeat;*/
 	display:inline-block;
+}
+header .topbar .top_menubar{
+	width:85.3%;
+	max-width:1393px;
+	display:block;
+	float:left;
+	position:relative;
 }
 
 header .topbar ul.topmenu{
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	float:right;
+	float:left;
 }
 
 header .topbar .topmenu li{
@@ -104,7 +129,7 @@ header .topbar .topmenu li{
 }
 
 header .topbar .topmenu li a{
-	padding:20px 40px;
+	padding:0px 40px;
 	font-size:18px;
 	font-weight:600;
 	color:#3961a1;

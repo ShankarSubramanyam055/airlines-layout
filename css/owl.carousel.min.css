@@ -9,7 +9,7 @@
 #demos .owl-carousel .item {
 	border:1px solid #ccc;
 	background: #fff;
-	padding: 30px 15px;
+	padding:5%;	/*padding: 30px 15px;*/
 	text-align:center;
 	font-size:14px;
 	font-weight:600;

@@ -10,21 +10,21 @@
 		padding:1.5% 20px;
 	}
 	header .topbar ul.topmenu{
-		float:none;
+		float:right;
 	}
 	header .topbar .topmenu li{
 		display:inline-block;
 		float:none;
 	}
 	header .topbar .topmenu li a{
-		padding:10px 14px;
-		font-size:16px;
+		padding:10px 14px!important;
+		font-size:14px;
 	}
 	header .topbar .topmenu li:first-child a{
 		padding-left:0;
 	}
 	header .topbar .topmenu li:last-child a{
-		padding-right:0;
+		padding-right:0!important;
 	}
 	header #banner{
 		padding:3%;
@@ -123,21 +123,21 @@
 		padding:1.5% 20px;
 	}
 	header .topbar ul.topmenu{
-		float:none;
+		float:right;
 	}
 	header .topbar .topmenu li{
 		display:inline-block;
 		float:none;
 	}
 	header .topbar .topmenu li a{
-		padding:10px 10px;
-		font-size:14px;
+		padding:10px 8px!important;
+		font-size:12px;
 	}
 	header .topbar .topmenu li:first-child a{
 		padding-left:0;
 	}
 	header .topbar .topmenu li:last-child a{
-		padding-right:0;
+		padding-right:0!important;
 	}
 	header #banner{
 		padding:3%;
@@ -261,15 +261,15 @@
 		padding:1.5% 20px;
 	}
 	header .topbar ul.topmenu{
-		float:none;
+		float:right;
 	}
 	header .topbar .topmenu li{
 		display:inline-block;
 		float:none;
 	}
 	header .topbar .topmenu li a{
-		padding:10px 9px;
-		font-size:14px;
+		padding:10px 8px!important;
+		font-size:12px;
 	}
 	header .topbar .topmenu li:first-child a{
 		padding-left:0;
@@ -444,6 +444,7 @@
 	}
 	header #banner .banner-main{
 		width:100%;
+		text-align:center;
 	}
 	.tab_content input[type="text"]{
 		margin:0 2px;
@@ -452,8 +453,14 @@
 	header #banner input[type="button"]{
 		margin-right:0;
 	}
+	#obar .fleft, #obar .fright{
+		text-align:center;
+		display:block;
+		float:none;
+	}
 	header #travel-opportunity{
 		padding:20px 20px;
+		text-align:center;
 	}
 	header #travel-opportunity .travel-block{
 		margin:2% auto 2%;
@@ -479,6 +486,7 @@
 	}
 	section, .inner_40{
 		padding:2%;
+		text-align:center;
 	}
 	.highlight-block p{
 		height:auto;
@@ -598,9 +606,11 @@
 	}
 	header #banner #banner_heading{
 		font-size:3.0em;
+		text-align:center;
 	}
 	header #banner #banner_description{
 		font-size:1.3em;
+		text-align:center;
 	}
 	header #obar, .grey_bg{
 		font-size:inherit;
@@ -635,10 +645,16 @@
 	}
 	header .topbar a.logo{
 		margin:0 auto;
+		width:100%;
 		display:block;
+		float:none;
+	}
+	header .topbar .top_menubar{
+		display:none;
 	}
 	header #banner #banner_terms, header #banner input[type="button"]{
 		font-size:inherit;
+		text-align:center;
 	}
 	header #banner input[type="button"]{
 		padding:10px;
@@ -701,6 +717,13 @@
 	}
 	header #banner .banner-main{
 		width:100%;
+		text-align:center;
+	}
+	#obar .fleft, #obar .fright{
+		width:100%;
+		text-align:center;
+		display:block;
+		float:none;
 	}
 	.tab_content input[type="text"]{
 		margin:0 2px;
@@ -711,6 +734,7 @@
 	}
 	header #travel-opportunity{
 		padding:20px 20px;
+		text-align:center;
 	}
 	header #travel-opportunity .travel-block{
 		margin:2% auto 2%;
@@ -732,10 +756,11 @@
 		font-weight:bold;
 	}
 	#main, .main{
-		width:100%;
+		width:90%;
 	}
 	section, .inner_40{
 		padding:2%;
+		text-align:center;
 	}
 	.highlight-block p{
 		height:auto;
@@ -892,7 +917,12 @@
 	}
 	header .topbar a.logo{
 		margin:0 auto;
+		width:100%;
 		display:block;
+		float:none;
+	}
+	header .topbar .top_menubar{
+		display:none;
 	}
 	header #banner #banner_terms, header #banner input[type="button"]{
 		font-size:inherit;
@@ -955,6 +985,7 @@
 	}
 	header #banner{
 		padding:3%;
+		text-align:center;
 	}
 	header #banner .banner-main{
 		width:100%;
@@ -966,8 +997,14 @@
 	header #banner input[type="button"]{
 		margin-right:0;
 	}
+	#obar .fleft, #obar .fright{
+		text-align:center;
+		display:block;
+		float:none;
+	}
 	header #travel-opportunity{
 		padding:20px 20px;
+		text-align:center;
 	}
 	header #travel-opportunity .travel-block{
 		margin:2% auto 2%;
@@ -993,6 +1030,7 @@
 	}
 	section, .inner_40{
 		padding:2%;
+		text-align:center;
 	}
 	.highlight-block p{
 		height:auto;
@@ -1149,7 +1187,11 @@
 	}
 	header .topbar a.logo{
 		margin:0 auto;
+		width:100%;
 		display:block;
+	}
+	header .topbar .top_menubar{
+		display:none;
 	}
 	header #banner #banner_terms, header #banner input[type="button"]{
 		font-size:inherit;
@@ -1212,6 +1254,7 @@
 	}
 	header #banner{
 		padding:3%;
+		text-align:center;
 	}
 	header #banner .banner-main{
 		width:100%;
@@ -1225,6 +1268,7 @@
 	}
 	header #travel-opportunity{
 		padding:20px 20px;
+		text-align:center;
 	}
 	header #travel-opportunity .travel-block{
 		margin:2% auto 2%;
@@ -1245,11 +1289,17 @@
 		font-size:0.9em;
 		font-weight:bold;
 	}
+	#obar .fleft, #obar .fright{
+		text-align:center;
+		display:block;
+		float:none;
+	}
 	#main, .main{
 		width:100%;
 	}
 	section, .inner_40{
 		padding:2%;
+		text-align:center;
 	}
 	.highlight-block p{
 		height:auto;
@@ -1410,7 +1460,11 @@
 	}
 	header .topbar a.logo{
 		margin:0 auto;
+		width:100%;
 		display:block;
+	}
+	header .topbar .top_menubar{
+		display:none;
 	}
 	header #banner #banner_terms, header #banner input[type="button"]{
 		font-size:inherit;
@@ -1473,6 +1527,7 @@
 	}
 	header #banner{
 		padding:3%;
+		text-align:center;
 	}
 	header #banner .banner-main{
 		width:100%;
@@ -1484,8 +1539,15 @@
 	header #banner input[type="button"]{
 		margin-right:0;
 	}
+	#obar .fleft, #obar .fright{
+		width:100%;
+		text-align:center;
+		display:block;
+		float:none;
+	}
 	header #travel-opportunity{
 		padding:20px 20px;
+		text-align:center;
 	}
 	header #travel-opportunity .travel-block{
 		margin:2% auto 2%;
@@ -1511,6 +1573,7 @@
 	}
 	section, .inner_40{
 		padding:2%;
+		text-align:center;
 	}
 	.highlight-block p{
 		height:auto;
@@ -1663,7 +1726,7 @@
 	.tabs li a{
 		font-size:inherit;
 	}
-	.topmenu{
+	.topmenu, header .topbar .top_menubar{
 		display:none;
 	}
 	.slicknav_menu{
@@ -1671,7 +1734,9 @@
 	}
 	header .topbar a.logo{
 		margin:0 auto;
+		width:100%;
 		display:block;
+		float:none;
 	}
 	header #banner #banner_terms, header #banner input[type="button"]{
 		font-size:inherit;
